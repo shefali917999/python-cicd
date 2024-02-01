@@ -3,10 +3,10 @@
 name: my-first-workflow
 
 on:
-  package:
-    paths:
-    - lint/
-    - test/
+    pull_request:
+      paths:
+        - lint/
+        - test/
   
 
 
