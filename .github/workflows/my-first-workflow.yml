@@ -3,8 +3,12 @@
 name: my-first-workflow
 
 on:
-  push:
-    branches: [ "main" ]
+  pull_request:
+    paths:
+    - lint/
+    - test/
+  
+
 
 jobs:
     lint:
